@@ -1,3 +1,10 @@
 body {
     background-color: $primary-bg !important;
+    color: $light-primary !important;
+    font-size: 16px !important;
+}
+
+.highlight {
+    color: $light-primary !important;
+    text-shadow: 0 0 4px $green-yellow-light, 0 0 7px $green-yellow-light;
 }

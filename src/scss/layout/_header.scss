@@ -1,5 +1,13 @@
+.header-horus {
+    margin-bottom: 120px;
+}
+
 #horus {
     max-width: 400px;
+    &:hover {
+        -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
+        filter: drop-shadow(0 2px 5px $green-yellow-light);
+      }
 }
 
 .nav-link {
@@ -11,10 +19,6 @@
     }
 }
 
-#horus:hover {
-  -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
-  filter: drop-shadow(0 2px 5px $green-yellow-light);
-}
 
 @media (min-width: 768px) {
     #horus{
