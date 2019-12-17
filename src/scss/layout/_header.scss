@@ -1,0 +1,25 @@
+#horus {
+    // background-color: red;
+    // border-radius: 20px;
+    
+}
+
+.nav-link {
+    color: $light-darker-1 !important;
+
+    &:hover {
+        color: $light-primary !important;
+        text-shadow: 0 0 4px $blue-light, 0 0 7px $blue-light;
+    }
+}
+
+#horus:hover {
+  -webkit-filter: drop-shadow(0 2px 5px $blue-light);
+  filter: drop-shadow(0 2px 5px $blue-light);
+}
+
+@media (min-width: 768px) {
+    #horus{
+        transform: translate(0, 100px);
+    }
+}
