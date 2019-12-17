@@ -1,0 +1,53 @@
+body {
+    font-family: $ff-body;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    color: $clr-violet-dark;
+    font-weight: $fw-normal;
+    margin: 0;
+}
+
+// .main_font {
+//     font-family: $ff-title;
+// }
+
+// .clr-pink-light {
+//     color: $clr-pink-light;
+// }
+
+.section {
+    font-family: $ff-title;
+    color: $clr-pink-light;
+
+    &__title {
+        font-size: 4.75rem;
+    }
+
+    &__subtitle {
+        font-size: 1.69rem;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: .5em;
+    }
+
+    &--intro {
+        color: $clr-turquoise-dark;
+        &__title {
+            font-size: 2.041rem;
+        }
+    
+        &__subtitle {
+            font-size: 1.69rem;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: .5em;
+        }
+    
+        &__text {
+            font-size: 1.215rem;
+            
+        }
+    }
+}
