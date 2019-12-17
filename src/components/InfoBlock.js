@@ -3,7 +3,7 @@ import React from 'react'
 export default function InfoBlock() {
     return (
         // <div className="info-block card">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="info-block">
                     <p className="">
                         Hi. I'm <span className="highlight">Rishat</span>. <br />
