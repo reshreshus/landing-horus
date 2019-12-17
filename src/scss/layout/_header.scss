@@ -1,7 +1,5 @@
 #horus {
-    // background-color: red;
-    // border-radius: 20px;
-    
+    max-width: 400px;
 }
 
 .nav-link {
@@ -9,13 +7,13 @@
 
     &:hover {
         color: $light-primary !important;
-        text-shadow: 0 0 4px $blue-light, 0 0 7px $blue-light;
+        text-shadow: 0 0 4px $green-yellow-light, 0 0 7px $green-yellow-light;
     }
 }
 
 #horus:hover {
-  -webkit-filter: drop-shadow(0 2px 5px $blue-light);
-  filter: drop-shadow(0 2px 5px $blue-light);
+  -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
+  filter: drop-shadow(0 2px 5px $green-yellow-light);
 }
 
 @media (min-width: 768px) {

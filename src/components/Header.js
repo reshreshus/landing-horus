@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
     return (
         <div className="row">
-          <div className="col-sm-push-12 col-md-4 d-flex">
+          <div className="col-6 col-md-4 d-flex order-md-1">
             <ul className="nav flex-column ml-md-auto ml-0">
               <li className="nav-item m-2">
                 <a href='https://t.me/reshreshus' className="nav-link">
@@ -23,11 +23,11 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12 col-md-4 mt-auto">
+          <div className="col-xs-7 col-md-4 mt-auto order-md-2 order-1">
             <img id="horus" class="img-fluid" src="horus_white.png" alt="Horus Eye"/>
           </div>
-          <div className="col-sm-12 col-md-4">
-          <ul className="nav flex-column">
+          <div className="col-6 col-md-4 order-md-3">
+            <ul className="nav flex-column">
               <li className="nav-item m-2">
                 <a href='https://twitter.com/reshreshus2' className="nav-link">
                   <i className="fab fa-twitter fa-4x" />
