@@ -3,12 +3,13 @@
     padding: 20px;
     border-radius: 5px;
     font-size: 1.5rem;
-    margin: 0.05rem;
+    margin:  0 0 1rem 3rem;
     max-width: 550px;
 }
 
-@media (min-width: 768px) {
-    info-block {
-        margin: 1rem;
+@media (max-width: 768px) {
+    .info-block {
+        margin: 0;
+        // background-color: red;
     }
 }

@@ -22,6 +22,14 @@
 
 @media (min-width: 768px) {
     #horus{
+        transform: translate(-40px, 100px);
+    }
+    
+}
+
+
+@media (min-width: 992px) {
+    #horus{
         transform: translate(0, 100px);
     }
 }

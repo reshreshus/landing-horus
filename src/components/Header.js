@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <div className="header-horus">
             <div className="row">
-            <div className="col-6 col-md-4 d-flex order-md-1">
+            <div className="col-6 col-md-4 d-flex order-md-1 pr-md-5">
                 <ul className="nav flex-column ml-md-auto ml-0">
                 <li className="nav-item m-2">
                     <a href='https://t.me/reshreshus' className="nav-link">
@@ -24,30 +24,30 @@ export default function Header() {
                 </li>
                 </ul>
             </div>
-            <div className="col-xs-7 col-md-4 mt-auto order-md-2 order-1">
-                <img id="horus" class="img-fluid" src="horus_white.png" alt="Horus Eye"/>
-            </div>
-            <div className="col-6 col-md-4 order-md-3">
+            <div className="col-xs-7 col-md-4 order-md-2 order-1">
+                <img id="horus" className="img-fluid" src="horus_white.png" alt="Horus Eye"/>
+            </div>  
+            <div className="col-6 col-md-4 order-md-3 pl-md-5 pl-lg-0">
                 <ul className="nav flex-column">
-                <li className="nav-item m-2">
-                    <a href='https://twitter.com/reshreshus2' className="nav-link">
-                    <i className="fab fa-twitter fa-4x" />
-                    {/* Telegram */}
-                    </a> 
-                </li>
-                <li className="nav-item m-2">
-                    <a href='https://github.com/reshreshus' className="nav-link">
-                        <i className="fab fa-github fa-4x" />
-                    </a> 
-                </li>
-                <li className="nav-item m-2">
-                    <a href='#projects' className="nav-link">
-                        <div className="d-flex align-items-center">
-                            <i className="fas fa-project-diagram fa-4x" />
-                            <h3>Projects</h3>
-                        </div>
-                    </a> 
-                </li>
+                    <li className="nav-item m-2">
+                        <a href='https://twitter.com/reshreshus2' className="nav-link">
+                        <i className="fab fa-twitter fa-4x" />
+                        {/* Telegram */}
+                        </a> 
+                    </li>
+                    <li className="nav-item m-2">
+                        <a href='https://github.com/reshreshus' className="nav-link">
+                            <i className="fab fa-github fa-4x" />
+                        </a> 
+                    </li>
+                    <li className="nav-item m-2">
+                        <a href='#projects' className="nav-link">
+                            <div className="d-flex align-items-center">
+                                <i className="fas fa-project-diagram fa-4x" />
+                                <h3>Projects</h3>
+                            </div>
+                        </a> 
+                    </li>
                 </ul>
             </div>
             </div>

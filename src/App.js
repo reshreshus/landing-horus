@@ -9,7 +9,7 @@ function App() {
     <div>
       <div className="container-fluid">
         <Header />
-        <div className="row justify-content-center">
+        <div className="row justify-content-md-center">
           <InfoBlock />
         </div>
         
