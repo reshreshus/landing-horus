@@ -7,7 +7,7 @@ function setup() {
       canvas.style('z-index', '-1');
       canvas.style('display', 'block');
       canvas.style('position', 'fixed');
-      for (var i = 0; i < 35; i++) {
+      for (var i = 0; i < 10; i++) {
         drops[i] = new Drop();
       }
       background(7, 7, 29);

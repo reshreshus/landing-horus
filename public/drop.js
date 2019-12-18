@@ -9,9 +9,9 @@ const thick = 1;
 function Drop() {
     this.x = random(-width/2*3, width/2);
     this.y = random(-500, -50);
-    this.z = random(0, 20);
-    this.len = map(this.z, 0, 20, 10, 20);
-    this.yspeed = map(this.z, 0, 20, 1, 20);
+    this.z = random(0, 10);
+    this.len = map(this.z, 0, 10, 10, 20);
+    this.yspeed = map(this.z, 0, 10, 1, 10);
 
     // let contentLeft = document.querySelector('.info-block').getBoundingClientRect().left;
     // let contentTop = document.querySelector('.info-block').getBoundingClientRect().top;
@@ -22,14 +22,14 @@ function Drop() {
     this.fall = function() {
         this.y = this.y + this.yspeed;
         this.x = this.x + this.yspeed;
-        let grav = map(this.z, 0, 20, 0, 0.2);
+        let grav = map(this.z, 0, 10, 0, 0.2);
         this.yspeed = this.yspeed + grav;
 
         if (this.y > height || this.x > width) {
             // this.y = random(-200, -100);
             this.x = random(-width/2*3, width/2);
             this.y = random(-500, -50);
-            this.yspeed = map(this.z, 0, 20, 4, 10);
+            this.yspeed = map(this.z, 0, 10, 4, 7);
         }
     };
   
