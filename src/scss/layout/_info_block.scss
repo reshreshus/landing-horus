@@ -6,6 +6,11 @@
     margin:  0 0 1rem 3rem;
     max-width: 550px;
     background-color: $primary-bg;
+
+    &:hover {
+        -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
+        filter: drop-shadow(0 2px 5px $green-yellow-light);
+    }
 }
 
 @media (max-width: 768px) {

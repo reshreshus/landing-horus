@@ -22,14 +22,14 @@ function Drop() {
     this.fall = function() {
         this.y = this.y + this.yspeed;
         this.x = this.x + this.yspeed;
-        let grav = map(this.z, 0, 10, 0, 0.2);
-        this.yspeed = this.yspeed + grav;
+        // let grav = map(this.z, 0, 10, 0, 0.00001);
+        // this.yspeed = this.yspeed + grav;
 
         if (this.y > height || this.x > width) {
             // this.y = random(-200, -100);
             this.x = random(-width/2*3, width/2);
             this.y = random(-500, -50);
-            this.yspeed = map(this.z, 0, 10, 4, 7);
+            this.yspeed = map(this.z, 0, 10, 1, 10);
         }
     };
   
