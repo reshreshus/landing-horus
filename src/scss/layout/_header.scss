@@ -8,6 +8,8 @@
         -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
         filter: drop-shadow(0 2px 5px $green-yellow-light);
       }
+
+    animation: 3s linear 1s infinite alternate slidein;
 }
 
 .nav-link {
@@ -17,7 +19,14 @@
         color: $light-primary !important;
         text-shadow: 0 0 4px $green-yellow-light, 0 0 7px $green-yellow-light;
     }
+
+    &:active {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+    }
 }
+
 
 
 @media (min-width: 768px) {
@@ -33,3 +42,30 @@
         transform: translate(0, 100px);
     }
 }
+
+@keyframes slidein {
+    from { transform: translate(0, 65px)}
+    to   { transform: translate(0, 80px) }
+}
+
+@keyframes shake {
+    2%, 18% {
+        transform: translate3d(-0.5px, 0, 0);
+    }
+
+    4%, 16% {
+        transform: translate3d(-0.5px, 0, 0);
+    }
+
+    6%, 10%, 14% {
+        transform: translate3d(-0.5px, 0, 0);
+    }
+
+    8%, 12% {
+        transform: translate3d(-0.5px, 0, 0);
+    }
+    
+    18.1% {
+        transform: translate3d(0px, 0, 0);
+    }
+  }
