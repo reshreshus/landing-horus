@@ -10,7 +10,7 @@ function setup() {
       for (var i = 0; i < 10; i++) {
         drops[i] = new Drop();
       }
-      background(7, 7, 29);
+      // background(7, 7, 29);
     }
 
 function windowResized() {

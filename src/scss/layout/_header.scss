@@ -8,7 +8,7 @@
         -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
         filter: drop-shadow(0 2px 5px $green-yellow-light);
       }
-
+    transform: translate(0, 65px);
     animation: 3s linear 1s infinite alternate slidein;
 }
 
@@ -29,19 +29,19 @@
 
 
 
-@media (min-width: 768px) {
-    #horus{
-        transform: translate(-40px, 100px);
-    }
+// @media (min-width: 768px) {
+//     #horus{
+//         transform: translate(-40px, 100px);
+//     }
     
-}
+// }
 
 
-@media (min-width: 992px) {
-    #horus{
-        transform: translate(0, 100px);
-    }
-}
+// @media (min-width: 992px) {
+//     #horus{
+//         transform: translate(0, 100px);
+//     }
+// }
 
 @keyframes slidein {
     from { transform: translate(0, 65px)}
