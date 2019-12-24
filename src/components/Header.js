@@ -3,21 +3,13 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     componentDidMount() {
         let horus = document.querySelector('#horus');
-        // console.log("horus porus", horus.getBoundingClientRect());
         let horus_position = horus.getBoundingClientRect();
-
-        // let horusX = (horus_position.right + horus_position.left) / 2
-        // let horusY = (horus_position.bottom + horus_position.top) / 2;
         let horusY = horus.offsetTop + horus.offsetHeight / 2;
         let horusX = horus.offsetLeft + horus.offsetWidth / 2;
-        // console.log("offsets", horus.offsetTop, horus.offsetTop + horus.offsetHeight);
-        // console.log("horus position", horusX, horusY);
-        // console.log("horus top bottom", horus_position.top, horus_position.bottom)
+        //fiddle with positioning
         horusY = horusY + 100;
 
         let planets = document.querySelectorAll('.nav-item');
-        console.log(planets);
-
 
         let rToPlanets = 210;
         let planetsCirc = 2 * Math.PI * rToPlanets;
@@ -27,25 +19,16 @@ export default class Header extends Component {
         let distanceBetweenCenters = planetsWidth + planetsMargin;
         let planetArc = 0;
         let planetAngle = 0;
-        // console.log("planetsCirc", planetsCirc);
         for (let i = 0; i < planetsNumber; i++) {
             planetArc = i * distanceBetweenCenters;
             planetAngle = planetArc / planetsCirc * 2 * Math.PI;
             let planetX = horusX + rToPlanets * Math.sin(planetAngle);
             let planetY = horusY - rToPlanets * Math.cos(planetAngle);
             
-            // console.log("planetAngle", planetAngle);
-            // console.log("planetArc", planetArc);
-            // console.log("xShift", rToPlanets * Math.sin(planetAngle))
-            // console.log("yShift", rToPlanets * Math.cos(planetAngle))
-            // console.log(planetX, planetY);
-            
             planets[i].style.position = "absolute";
             planets[i].style.zIndex = "1";
             planets[i].style.left = (planetX - planetsWidth / 2).toString() + "px";
             planets[i].style.top = (planetY - planetsWidth / 2).toString() + "px";
-            // planets[i].style.left = (planetX).toString() + "px";
-            // planets[i].style.top = (planetY).toString() + "px";
     }
 }
     render() {    
@@ -87,6 +70,7 @@ export default class Header extends Component {
                 
                 <div className="nav-item">
                     <a href='https://merume.ru' className="nav-link">
+                        <h3>Blog</h3>
                         <i className="fas fa-bus fa-4x" />
                     </a> 
                 </div>

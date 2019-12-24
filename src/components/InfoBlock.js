@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function InfoBlock() {
     return (
-        // <div className="info-block card">
-            
                 <div className="info-block m-3">
                     <p className="">
                         Hi. I'm <span className="highlight">Rishat</span>. <br />
@@ -14,7 +12,5 @@ export default function InfoBlock() {
                         I'm starting to open up to the world. Feel free to contact me)
                     </p>
                 </div>
-            
-        // </div>
     )
 }
