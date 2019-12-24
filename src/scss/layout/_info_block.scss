@@ -3,8 +3,22 @@
     // padding: 20px;
     border-radius: 5px;
     font-size: 1.5rem;
+    padding-top: 6rem;
     // margin:  1rem 0 1rem 3rem;
-    max-width: 450px;
+    // max-width: 450px;
+    // min-width: 400px;
+    width: 100%;
     background-color: $primary-bg;
 }
 
+
+@media(min-width: 768px) {
+    .info-block{
+        width: 550px;
+    }
+}
+@media(min-width: 992px) {
+    .info-block{
+        max-width: 400px;
+    }
+}
