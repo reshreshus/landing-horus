@@ -1,16 +1,16 @@
 .info-block {
-    border: 1px solid $light-primary;
-    padding: 20px;
+    // border: 1px solid $light-primary;
+    // padding: 20px;
     border-radius: 5px;
     font-size: 1.5rem;
     margin:  0 0 1rem 3rem;
     max-width: 550px;
     background-color: $primary-bg;
 
-    &:hover {
-        -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
-        filter: drop-shadow(0 2px 5px $green-yellow-light);
-    }
+    // &:hover {
+    //     -webkit-filter: drop-shadow(0 2px 5px $green-yellow-light);
+    //     filter: drop-shadow(0 2px 5px $green-yellow-light);
+    // }
 }
 
 @media (max-width: 768px) {
