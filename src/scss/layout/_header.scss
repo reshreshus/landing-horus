@@ -9,13 +9,15 @@
 }
 
 .horus-container {
-    margin: 100px;   
+    // margin-top: 100px;
+    margin: 50px;   
     padding: 0;
     width: 450px;
 }
 
 
 .nav-item a {
+    width: 130px;
     color: $light-darker-1 !important;
     &:hover {
         color: $light-primary !important;
@@ -34,20 +36,6 @@
 }
 
 
-
-// @media (min-width: 768px) {
-//     #horus{
-//         transform: translate(-40px, 100px);
-//     }
-    
-// }
-
-
-// @media (min-width: 992px) {
-//     #horus{
-//         transform: translate(0, 100px);
-//     }
-// }
 
 @keyframes slidein {
     from { transform: translate(0, 0)}
@@ -75,3 +63,17 @@
         transform: translate3d(0px, 0, 0);
     }
   }
+
+@media(max-width: 565px) {
+    .nav-item a{
+        display: none ;
+    }
+
+    #horus {
+        margin: 0;
+    }
+
+    .horus-container {
+        margin: 0;
+    }
+}

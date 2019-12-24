@@ -1,0 +1,17 @@
+.info-block {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding-top: 6rem;
+  min-width: 400px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .info-block {
+    width: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .info-block {
+    max-width: 400px;
+  }
+}
