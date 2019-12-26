@@ -77,7 +77,7 @@
 
 @media(max-width: 565px) {
     .floating-links .social-link-container a{
-        display: none ;
+        display: none;
     }
 
     #horus {
@@ -92,7 +92,5 @@
 @media(min-width: 565px) {
     .not-floating-links .social-link-container a{
         display: none;
-        color: red;
-        background-color: red;
     }
 }
