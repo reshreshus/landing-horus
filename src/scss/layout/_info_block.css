@@ -2,8 +2,8 @@
   border-radius: 5px;
   font-size: 1.5rem;
   padding-top: 6rem;
-  min-width: 400px;
-  width: 100%;
+  min-width: 250px;
+  width: 85vw;
 }
 @media (min-width: 768px) {
   .info-block {

@@ -1,9 +1,0 @@
-#horus:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
-}
-@media (min-width: 768px) {
-  #horus {
-    transform: translate(0, 100px);
-  }
-}

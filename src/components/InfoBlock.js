@@ -3,7 +3,7 @@ import React from 'react'
 export default function InfoBlock() {
     return (
                 <div className="info-block m-3">
-                    <p className="">
+                    <p className="info-block-text">
                         Hi. I'm <span className="highlight">Rishat</span>. <br />
                         A human being for about 20 years.<br />
                         Tatar from Russia. <br />

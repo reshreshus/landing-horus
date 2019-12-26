@@ -20,7 +20,7 @@ export default class App extends Component {
             </div>
             <FloatingSocialLinks/>
           </div>
-          <div className="col-12 col-sm-12 col-md-5 ml-4">
+          <div className="col-12 col-sm-12 col-md-5 ml-0 ml-md-3 mr-1">
             <InfoBlock />
           </div>
         </div>
