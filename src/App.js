@@ -3,10 +3,9 @@ import './scss/main.scss';
 
 
 import InfoBlock from './components/InfoBlock';
-import Header from './components/Header';
+import FloatingSocialLinks from './components/FloatingSocialLinks';
+import SocialLinks from './components/SocialLinks';
 export default class App extends Component {
-
-  
 
   render () {
     return (
@@ -19,12 +18,16 @@ export default class App extends Component {
               <img id="horus" src="horus_white.png" alt="Horus Eye"/>
               
             </div>
-            <Header />
+            <FloatingSocialLinks/>
           </div>
           <div className="col-12 col-sm-12 col-md-5 ml-4">
             <InfoBlock />
           </div>
         </div>
+        {/* <div className="row"> */}
+          <SocialLinks cName="not-floating-links"/>
+        {/* </div> */}
+
       </div>
     );
   }

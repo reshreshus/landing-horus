@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// const bodyRect = document.body.getBoundingClientRect()
+import SocialLinks from './SocialLinks';
 let bodyRect = document.documentElement;
 
 const getOffset = el => {
@@ -30,11 +30,6 @@ const getOffset2 =  el => {
 }
 
 export default class Header extends Component {
-    Header() {
-        
-    }
-    
-
     orderPlanets(offetY) {
         // if (matcher.matches) {
             // console.log("Matches!");
@@ -50,7 +45,7 @@ export default class Header extends Component {
             horusY = horusY + offetY;
             // horusY = horusY + 100;
 
-            let planets = document.querySelectorAll('.nav-item');
+            let planets = document.querySelectorAll('.floating-links .social-link-container');
 
             let rToPlanets = 210;   
             let planetsCirc = 2 * Math.PI * rToPlanets;
@@ -87,49 +82,8 @@ export default class Header extends Component {
     }
     render() {    
         return (
-            <div className="header-horus">
-                {/* <div className="row flex-wrap justify-content-between "> */}
-                    <div className="nav-item">
-                        <a href='https://t.me/reshreshus' className="nav-link">
-                        <i className="fab fa-telegram fa-4x" />
-                        </a> 
-                    </div>
-                    <div className="nav-item">
-                        <a href='mailto:merumeru.ceo@yandex.ru' className="nav-link">
-                            <i className="far fa-envelope fa-4x" />
-                        </a> 
-                    </div>
-                    <div className="nav-item">
-                        <a href='https://vk.com/reshreshus' className="nav-link">
-                            <i className="fab fa-vk fa-4x" />
-                        </a> 
-                    </div>
-                    <div className="nav-item">
-                        <a href='#projects' className="nav-link">
-                            <div className="d-flex align-items-center">
-                                <i className="fas fa-project-diagram fa-4x" />
-                                <h3>Projects</h3>
-                            </div>
-                        </a> 
-                    </div>
-                    <div className="nav-item">
-                        <a href='https://twitter.com/reshreshus2' className="nav-link">
-                        <i className="fab fa-twitter fa-4x" />
-                        </a> 
-                    </div>
-                    <div className="nav-item">
-                        <a href='https://github.com/reshreshus' className="nav-link">
-                            <i className="fab fa-github fa-4x" />
-                        </a> 
-                    </div>
-                    
-                    <div className="nav-item">
-                        <a href='https://merume.ru' className="nav-link">
-                            <h3>Blog</h3>
-                            <i className="fas fa-bus fa-4x" />
-                        </a> 
-                    </div>
-                {/* </div> */}
+            <div className="floating-links">
+                   <SocialLinks />
             </div>
         )
     }
