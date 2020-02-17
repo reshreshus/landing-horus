@@ -38,12 +38,12 @@ export default function SocialLinks(props) {
                 </a> 
             </div>
             
-            <div className="social-link-container">
+            {/* <div className="social-link-container">
                 <a href='https://merume.ru' className="nav-link" target="_blank">
                     <h3>Blog</h3>
                     <i className="fas fa-bus fa-4x" />
                 </a> 
-            </div>
+            </div> */}
         </div>
     )
 }
